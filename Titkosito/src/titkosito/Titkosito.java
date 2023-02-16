@@ -10,11 +10,20 @@ package titkosito;
  */
 public class Titkosito {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        
+        
+        Kodolo ko = new Kodolo();
+        
+        String kodolando = "Ez egy titkos jelszó";
+        String titok = ko.kodol(kodolando);
+        
+        System.out.println(titok);
+                
+        Dekodolo dk = new Dekodolo();
+        System.out.println("Dekódolva: "+dk.dekodol(titok));
+        
     }
     
 }

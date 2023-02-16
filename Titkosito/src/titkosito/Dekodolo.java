@@ -12,12 +12,12 @@ package titkosito;
  */
 public class Dekodolo {
     private String szo;
-    private int szam = 5;
+    private int szam = 2;
     
     public String dekodol(String szoveg){
         char[] tomb = szoveg.toCharArray();
         for (int i = 0; i < tomb.length; i++) {
-            tomb[i] -= (char)tomb[i]-szam;
+            tomb[i] = (char)(tomb[i]-szam);
         }
         
         return new String(tomb);
